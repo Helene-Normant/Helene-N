@@ -1,11 +1,9 @@
 import { createRoot } from 'react-dom/client';
-
-
-
+import Header from './components/header/Header';
 
 const App = () => {
   return (
-    <div>Hello</div>
+      <Header />
   )
     };
 

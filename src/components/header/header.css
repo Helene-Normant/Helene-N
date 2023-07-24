@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header-hover-download:hover {
+   text-shadow: 3px 4px #FD9C7D;
+}
+
+.header-hover-contact:hover {
+   text-shadow: 3px 4px #FD9C7D;
+}

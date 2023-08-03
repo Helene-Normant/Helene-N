@@ -30,6 +30,11 @@ module.exports = {
         lineHeight: '2.25rem',
         letterSpacing: '-0.02em',
         fontWeight: '500',
+        }],
+      '4xl': ['3rem', {
+        lineHeight: '2.25rem',
+        letterSpacing: '-0.02em',
+        fontWeight: '500',
       }],
     }
     },

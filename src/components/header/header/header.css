@@ -11,7 +11,7 @@
 }
 
 .header-hover-download::before {
-  background: hsl(14 80% 70%);
+  background: hsl(14 75% 75%);
   content: "";
   inset: 0;
   position: absolute;
@@ -22,7 +22,7 @@
 }
 
 .header-hover-contact::before {
-  background: hsl(14 80% 70%);
+  background: hsl(14 75% 75%);
   content: "";
   inset: 0;
   position: absolute;

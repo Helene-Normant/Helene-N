@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.loading:after {
+  content: ' .';
+  animation: dots 3s steps(5, end) infinite;}
+
+@keyframes dots {
+  0%, 20% {
+    color: #FD9C7D;
+    text-shadow:
+      .25em 0 0 rgba(0,0,0,0),
+      .5em 0 0 rgba(0,0,0,0);}
+  40% {
+    color: #FD9C7D;
+    text-shadow:
+      .25em 0 0 rgba(0,0,0,0),
+      .5em 0 0 rgba(0,0,0,0);}
+  60% {
+    text-shadow:
+      .25em 0 0 #FD9C7D,
+      .5em 0 0 rgba(0,0,0,0);}
+  80%, 100% {
+    text-shadow:
+      .25em 0 0 #FD9C7D,
+      .5em 0 0 #FD9C7D;}}

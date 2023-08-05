@@ -10,6 +10,7 @@ module.exports = {
     },
     colors: {
       'light': '#F9F8F6',
+      'medium': '#2D2D2D',
       'dark': '#222121',
       'orange': '#FD9C7D',
     },
@@ -19,7 +20,7 @@ module.exports = {
       '1xl': ['1.5rem', {
         lineHeight: '2rem',
         letterSpacing: '-0.01em',
-        fontWeight: '300',
+        fontWeight: '400',
       }],
       '2xl': ['2rem', {
         lineHeight: '2.25rem',

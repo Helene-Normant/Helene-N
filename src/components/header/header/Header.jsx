@@ -13,7 +13,7 @@ const Header = () => {
                         <h1 className='header-hover-contact text-3xl text-dark cursor-pointer'>CONTACT</h1>
              </div>
              <div className='flex'>  
-                <div className='bg-dark w-[200px] text-center'>
+                <div className='bg-medium w-[200px] text-center'>
                        <h1 className='text-3xl text-light'>FRONT-END</h1> 
                        <h1 className='text-3xl text-light'>DEVELOPER</h1>
                 </div>

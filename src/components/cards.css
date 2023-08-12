@@ -1,0 +1,50 @@
+.imgcontenu {
+  transition: 0.5s;
+}
+
+.conteneura:hover .imgcontenu {
+  opacity: 0.1;
+}
+
+.conteneura:hover .txtcontenu {
+  opacity: 1;
+}
+
+.conteneura,
+.conteneur{
+  position: relative; 
+  border-radius: 3px;
+}
+.conteneur:before{
+  content: '';
+  transition: 0.5s;
+  position:relative;
+  z-index:1; 
+}
+.txtcontenu {
+  position: absolute;
+  left: 0;
+  top:0;
+  opacity: 0;
+  transition: 0.5s;
+  z-index:2
+}
+.conteneur:hover:before{
+  opacity: 0.5;
+}
+
+.conteneur:hover .txtcontenu {
+  opacity: 1;
+}
+
+.typewriter h3 {
+  position: relative;
+  overflow: hidden; /* ensures that the content is not revealed until the animation */
+  border-right: 0.3em solid #FD9C7D; /*the cursor to the right */
+  margin: 0 auto; /* gives the scrolling effect during the typing animation */
+  max-width: 400px; /* Set the max-width to 100px */
+  white-space: nowrap; /* Prevent the text from wrapping */
+  letter-spacing: .2em; /* Adjust the letter-spacing to fit within 100px */
+  animation: typing 3.5s steps(30, end),
+  bling-caret .5s step-end;
+}

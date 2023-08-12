@@ -5,32 +5,11 @@
 .typewriter h1 {
   position: relative;
   overflow: hidden; /* ensures that the content is not revealed until the animation */
-  border-right: .15em solid #FD9C7D; /*the cursor to the right */
+  border-right: 0.3em solid #FD9C7D; /*the cursor to the right */
   margin: 0 auto; /* gives the scrolling effect during the typing animation */
   max-width: 150px; /* Set the max-width to 100px */
   white-space: nowrap; /* Prevent the text from wrapping */
   letter-spacing: .2em; /* Adjust the letter-spacing to fit within 100px */
   animation: typing 3.5s steps(30, end),
-             bling-caret .5s step-end;
-}
-
-.typewriter h1::after {
-  content: ''; /* Add a pseudo-element */
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 0; /* Set initial width to 0 */
-  border-right: .15em solid #FD9C7D;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from {width: 0}
-  to {width: 100%}
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to {border-color: transparent} 50% {border-color:#FD9C7D }
+  bling-caret .5s step-end;
 }

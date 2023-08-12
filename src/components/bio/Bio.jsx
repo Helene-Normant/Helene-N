@@ -5,7 +5,7 @@ const Bio = () => {
     return (
   <div className='bio mt-4 0 flex'>
      <div className="wrap-image">
-        <img className='image-bio rounded-[5px]' src={IMGBIO} alt="bio picture"/>
+        <img className='image-bio rounded-[3px]' src={IMGBIO} alt="bio picture"/>
      </div>
             <p className='text-bio text-justify text-medium text-0xl'>
 

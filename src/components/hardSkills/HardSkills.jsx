@@ -8,7 +8,7 @@ import { SiJavascript } from 'react-icons/si';
 
 const HardSkills = () => {
   return (
-    <div className='mt-2 p-3 w-[270px] h-[300px] border-[1px] border-solid border-dark rounded-[5px]'>
+    <div className='mt-2 p-3 w-[270px] h-[300px] border-[1px] border-solid border-dark rounded-[3px]'>
          <div className='flex'>
            <h3 className='flex items-center text-1xl text-orange'> <GoTools/> </h3>
            <h3 className='px-1 text-1xl text-dark'> Tools</h3>

@@ -28,7 +28,7 @@ width: 500px;
 
   &::before {
     background-color: #FD9C7D;
-    top: -11px;
+    top: -5px;
     left: 60px;
   }
   &::after {

@@ -3,13 +3,8 @@
 @tailwind utilities;
 
 .typewriter h1 {
-  position: relative;
-  overflow: hidden; /* ensures that the content is not revealed until the animation */
   border-right: 0.3em solid #FD9C7D; /*the cursor to the right */
   margin: 0 auto; /* gives the scrolling effect during the typing animation */
   max-width: 150px; /* Set the max-width to 100px */
-  white-space: nowrap; /* Prevent the text from wrapping */
   letter-spacing: .2em; /* Adjust the letter-spacing to fit within 100px */
-  animation: typing 3.5s steps(30, end),
-  bling-caret .5s step-end;
 }

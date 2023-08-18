@@ -1,4 +1,6 @@
-import IMG1 from '../assets/Castorlama.png'
+import IMG1 from '../assets/triplink.png'
+import IMG2 from '../assets/Castorlama.png'
+import IMG3 from '../assets/portfolio-v1.png'
 import './cards.css'; 
 
 const data = [
@@ -7,27 +9,27 @@ const data = [
     image: IMG1,
     title: 'Triplink | Front-end team | Graduate project',
     subtitle :'Social network for travel',
-    description:'During our final year of education, I participated in a group project with 4 members. Our team consisted of two people working on the front end and two on the back end. I had a multifaceted role, serving as both a designer and a front-end developer. Additionally, I demonstrated strong teamwork abilities and played a crucial role in organizing the project.',
+    description:'Work still in porgress: In our last year of education, I am part of a 4-member group project. Our team has 2 front-end and 2 back-end members. I am the designer and front-end developer, showcasing teamwork and a key role in project organization.',
     github: 'https://github.com/Helene-Normant/Ride_my_bike',
     demo:''
   },
 
   {
     id: 2,
-    image: IMG1,
+    image: IMG2,
     title: 'Castorlama | Front-end team',
-    subtitle: 'Furniture shopping website',
-    desription:'',
+    subtitle: 'Vintage Furniture shopping',
+    description:'This two-week project during my studies provided me with a better understanding of the interaction between the back-end and the front-end. It also allowed us to establish a structured organization based on the agile methodology. I was able to handle both the design and front-end development aspects effectively.',
     github: 'https://github.com/Helene-Normant/pimp_emoji',
     demo:''
   },
 
   {
     id: 3,
-    image: IMG1,
+    image: IMG3,
     title: 'Portfolio_v1 | Personal project',
-    subtitle:'',
-    description: '',
+    subtitle:'My first portfolio in react',
+    description: 'During my search for an apprenticeship, I chose to deepen my knowledge in front-end development and focus on React. This led me to combine learning with practicality by creating a portfolio. This not only allowed me to grasp the fundamentals but also showcased my skills during my job search efforts.',
     github: 'https://github.com/Helene-Normant/helene-normant.github.io',
     demo:''
   }
@@ -55,7 +57,7 @@ const Cards = () => {
                                     <p className='mt-3 text-justify text-medium text-[15px]'>{description}</p>
                                    <div className='mt-5 flex justify-around'>
                                   <button className='px-[22px] py-[10px] text-center inline-block bg-light bg-opacity-50 hover:bg-orange border-[1.5px] border-solid border-orange rounded-[3px] text-orange hover:text-medium'>
-                                      <a className='text-[1rem]' href={github}>GitHub</a> 
+                                      <a className='text-[1rem]' href={github} target="_blank">GitHub </a> 
                                  </button>
                                   <button className='px-[22px] py-[10px] text-center inline-block bg-light bg-opacity-50 hover:bg-orange border-[1.5px] border-solid border-orange rounded-[3px] text-orange hover:text-medium'>
                                         <a className='text-[1rem]' href={demo}>Démo</a> 

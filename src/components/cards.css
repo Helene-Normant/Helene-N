@@ -40,7 +40,7 @@
 .typewriter h3 {
   border-right: 0.3em solid #FD9C7D; /*the cursor to the right */
   margin: 0 auto; /* gives the scrolling effect during the typing animation */
-  max-width: 350px; /* Set the max-width to 100px */
-  letter-spacing: .02em; /* Adjust the letter-spacing to fit within 100px */
+  max-width: 310px; /* Set the max-width to 100px */
+  letter-spacing: .05em; /* Adjust the letter-spacing to fit within 100px */
 }
 

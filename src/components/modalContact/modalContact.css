@@ -1,0 +1,41 @@
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(249, 248, 246, 0.661);
+    z-index: 1;
+}
+
+.modal-container {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: 500px;
+    left: 50%;
+    top: 50%;
+    background-color: white;
+    box-shadow: 0 0 1.125em 0 rgba(0, 0, 0, 0.75);
+    border-radius: 3px;
+}
+
+.close-modal {
+    display: flex;
+    justify-content: right;
+    margin-right: 0.375em;
+    margin-top: 0.375em;
+}
+
+.textarea {
+  resize: none;
+}
+
+
+
+
+
+
+
+
+

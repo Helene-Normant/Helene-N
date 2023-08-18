@@ -8,7 +8,7 @@ width: 500px;
 
 .text-bio {
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     width: 470px;
     margin-left: 80px;
 }

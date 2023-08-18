@@ -1,8 +1,31 @@
 import './modalContact.css'; 
-import { AiOutlineClose} from 'react-icons/ai';
+import { AiOutlineClose } from 'react-icons/ai';
+import { useRef } from 'react';
+import emailjs from 'emailjs-com';
+import { toast, ToastContainer } from 'react-toastify';
 
 
-const ModalContact = ({closeModal}) => {
+const ModalContact = ({ closeModal }) => {
+    const form = useRef();
+
+//   
+    const sendEmail = async (e) => {
+    e.preventDefault();
+
+    try {
+        await emailjs.sendForm('service_jtefeih', 'template_cp7n91k', form.current, 'ut-QCXmhwtfNQ95Iu');
+        // alert('Message envoyé');
+         toast.success("Message envoyé", {
+              hideProgressBar: true,
+              position: toast.POSITION.BOTTOM_RIGHT,
+              icon: "🚀",
+            });
+        e.target.reset();
+    } catch (error) {
+        console.log(error.text);
+    }
+};
+
     return (
         <div className='overlay'>
             <div className='modal-container border-[1px] border-solid border-dark'>
@@ -13,7 +36,7 @@ const ModalContact = ({closeModal}) => {
                     <h1>Let's keep in touch</h1>
                 </div>
                 <div className='flex justify-center mt-7 content-modal'>
-                <form className='space-y-6 flex flex-col'>
+                <form className='space-y-6 flex flex-col' ref={form} onSubmit={sendEmail}>
                     <input className='pl-4 text-medium h-[40px] text-1xl border-[1.5px] border-solid border-dark rounded-[5px] placeholder:text-1xl placeholder:text-orange placeholder:pl-2' type="text" name='name' placeholder='Your name' required />
                     <input className='pl-4 text-medium h-[40px] text-1xl border-[1.5px] border-solid border-dark rounded-[5px] placeholder:text-1xl placeholder:text-orange placeholder:pl-2' type="email" name="email" placeholder='Your email' required />
                     <textarea className='textarea pl-4 text-medium w-[500px] text-1xl border-[1.5px] border-solid border-dark rounded-[5px] placeholder:text-1xl placeholder:text-orange placeholder:text-center placeholder:p-4 ' name="message" rows="7" placeholder='Your message' required></textarea>
@@ -24,7 +47,8 @@ const ModalContact = ({closeModal}) => {
                     </div>
                     </form>
                 </div>
-           </div>
+            </div>
+              <ToastContainer />
         </div>
     );
   };

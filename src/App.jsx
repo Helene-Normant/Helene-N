@@ -2,6 +2,7 @@ import { createRoot } from 'react-dom/client';
 import Header from './components/header/Header';
 import Content from './components/Content';
 import Footer from './components/footer/Footer';
+import { ToastContainer } from 'react-toastify';
 
 const App = () => {
   return (

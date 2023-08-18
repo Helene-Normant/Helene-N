@@ -1,5 +1,4 @@
-import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
-import Cards from './Cards';
+import Cards from '../cards/Cards';
 import './project.css';
 
 const Projects = () => {

@@ -1,5 +1,5 @@
 import About from './about/About'
-import Pojects from './Projects'
+import Pojects from './project/Projects'
 
 const Content = () => {
     return (

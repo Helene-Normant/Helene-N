@@ -1,6 +1,6 @@
-import IMG1 from '../assets/triplink.png'
-import IMG2 from '../assets/Castorlama.png'
-import IMG3 from '../assets/portfolio-v1.png'
+import IMG1 from '../../assets/triplink.png'
+import IMG2 from '../../assets/Castorlama.png'
+import IMG3 from '../../assets/portfolio-v1.png'
 import './cards.css'; 
 import 'react-tooltip/dist/react-tooltip.css';
 import { Tooltip } from 'react-tooltip';

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './header.css';
 import { BsArrowDown, BsArrowRight } from 'react-icons/bs';
 import ModalContact from '../modalContact/modalContact';
+import CV from '../../assets/CV-helene_normant.pdf'
 
 const Header = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -12,7 +13,9 @@ const Header = () => {
           <div className='flex justify-between' >
                 <div className='flex items-center'>
                         <h1 className='ml-[73px] text-3xl text-dark'> <BsArrowRight/> </h1>
-                        <h1 className='header-hover-download text-3xl cursor-pointer'>DOWNLOAD CV</h1>
+            <h1>
+             <a href={CV} download className='header-hover-download text-3xl cursor-pointer'>DOWNLOAD CV </a>
+            </h1>
             <h1 className='ml-[200px] text-center text-3xl text-dark'> <BsArrowDown /> </h1>
             <div>
               <button className='header-hover-contact text-3xl text-dark cursor-pointer' onClick={() => {setOpenModal(true)}}>CONTACT</button>

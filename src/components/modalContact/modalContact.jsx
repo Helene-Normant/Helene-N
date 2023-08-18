@@ -32,7 +32,7 @@ const ModalContact = ({ closeModal }) => {
                    <div className='close-modal'>
                     <button className='text-medium text-3xl' onClick={() => closeModal(false)}> <AiOutlineClose /> </button>
                     </div>
-                <div className='title-modal text-medium text-3xl text-center'>
+                <div className='flex justify-center title-modal text-medium text-3xl text-center'>
                     <h1>Let's keep in touch</h1>
                 </div>
                 <div className='flex justify-center mt-7 content-modal'>

@@ -2,6 +2,8 @@ import IMG1 from '../assets/triplink.png'
 import IMG2 from '../assets/Castorlama.png'
 import IMG3 from '../assets/portfolio-v1.png'
 import './cards.css'; 
+import 'react-tooltip/dist/react-tooltip.css';
+import { Tooltip } from 'react-tooltip';
 
 const data = [
   {
@@ -41,7 +43,7 @@ const Cards = () => {
         <section>
       <div className='portfolio-container'>
         {
-          data.map(({id, image, title, subtitle, description, github, demo }) => {
+          data.map(({id, image, title, subtitle, description, github }) => {
               return (
             <div key={id} className='flex m-6 border-[1.5px] border-solid border-dark rounded-[3px]'>
               <article>
@@ -55,13 +57,16 @@ const Cards = () => {
                             <h3 className='flex justify-center text-2xl text-medium'>{subtitle}</h3>
                             </div>
                                     <p className='mt-3 text-justify text-medium text-[15px]'>{description}</p>
-                                   <div className='mt-5 flex justify-around'>
+                          <div className='mt-5 flex justify-around'>
                                   <button className='px-[22px] py-[10px] text-center inline-block bg-light bg-opacity-50 hover:bg-orange border-[1.5px] border-solid border-orange rounded-[3px] text-orange hover:text-medium'>
                                       <a className='text-[1rem]' href={github} target="_blank">GitHub </a> 
-                                 </button>
-                                  <button className='px-[22px] py-[10px] text-center inline-block bg-light bg-opacity-50 hover:bg-orange border-[1.5px] border-solid border-orange rounded-[3px] text-orange hover:text-medium'>
-                                        <a className='text-[1rem]' href={demo}>Démo</a> 
-                                 </button>
+                            </button>
+                                  <a className='my-anchor-element cursor-not-allowed px-[22px] py-[10px] text-center inline-block bg-light bg-opacity-50 border-[1.5px] border-solid border-orange rounded-[3px] text-orange'>  
+                                  Démo
+                                  </a>
+                            <Tooltip anchorSelect=".my-anchor-element" place="top">
+                              Available soon!
+                            </Tooltip> 
                                 </div>     
                               </div>
                          </div>     

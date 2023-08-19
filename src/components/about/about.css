@@ -1,8 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-.loading:after {
+.loading-about:after {
   content: ' .';
   animation: dots 3s steps(5, end) infinite;}
 

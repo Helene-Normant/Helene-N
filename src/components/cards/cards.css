@@ -1,16 +1,16 @@
-.imgcontenu {
+.img-cards {
   transition: 0.5s;
 }
 
-.conteneura:hover .imgcontenu {
+.cards-img-container:hover .img-cards {
   opacity: 0.1;
 }
 
-.conteneura:hover .txtcontenu {
+.cards-img-container:hover .cards-title-container {
   opacity: 1;
 }
 
-.conteneura,
+.cards-img-container,
 .conteneur{
   position: relative; 
   border-radius: 3px;
@@ -21,7 +21,7 @@
   position:relative;
   z-index:1; 
 }
-.txtcontenu {
+.cards-title-container {
   position: absolute;
   left: 0;
   top:0;
@@ -33,14 +33,8 @@
   opacity: 0.5;
 }
 
-.conteneur:hover .txtcontenu {
+.conteneur:hover .cards-title-container {
   opacity: 1;
 }
 
-.typewriter h3 {
-  border-right: 0.3em solid #FD9C7D; /*the cursor to the right */
-  margin: 0 auto; /* gives the scrolling effect during the typing animation */
-  max-width: 310px; /* Set the max-width to 100px */
-  letter-spacing: .05em; /* Adjust the letter-spacing to fit within 100px */
-}
 

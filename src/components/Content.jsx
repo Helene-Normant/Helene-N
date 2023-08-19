@@ -1,12 +1,12 @@
-import About from './about/About'
-import Pojects from './project/Projects'
+import About from './about/About';
+import Pojects from './project/Projects';
 
 const Content = () => {
     return (
-        <div className='flex justify-evenly'>
-        <About/>
-        <Pojects/>   
-         </div>
+        <div className='body-container flex justify-evenly'>
+          <About/>
+          <Pojects/>   
+        </div>
 )
   };
 

@@ -1,19 +1,8 @@
-.image-bio {
-width: 15%;
-}
-
-.bio {
-width: 500px;
-}
-
 .text-bio {
-    position: absolute;
     z-index: 0;
-    width: 470px;
-    margin-left: 80px;
 }
 
-.wrap-image {
+.image-bio-container {
   position: relative;
   &::before,
   &::after {

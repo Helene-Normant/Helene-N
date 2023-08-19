@@ -1,12 +1,14 @@
 import { useRef } from 'react';
 
 import './modalContact.css'; 
+import 'react-toastify/dist/ReactToastify.css';
 
 import emailjs from 'emailjs-com';
 import { toast, ToastContainer } from 'react-toastify';
 
 import { AiOutlineClose } from 'react-icons/ai';
-import { BsArrowRight, BsArrowLeft } from 'react-icons/bs';
+import { BsArrowRight, BsArrowLeft, BsFillRocketTakeoffFill } from 'react-icons/bs';
+import { BiSolidError } from 'react-icons/bi';
 
 
 const ModalContact = ({ closeModal }) => {
@@ -18,15 +20,19 @@ const ModalContact = ({ closeModal }) => {
 
     try {
         await emailjs.sendForm('service_jtefeih', 'template_cp7n91k', form.current, 'ut-QCXmhwtfNQ95Iu');
-        // alert('Message envoyé');
-         toast.success("Message envoyé", {
+         toast.success("Your message has been sent", {
               hideProgressBar: true,
               position: toast.POSITION.BOTTOM_RIGHT,
-              icon: "🚀",
+              icon: <BsFillRocketTakeoffFill/>,
             });
         e.target.reset();
     } catch (error) {
         console.log(error.text);
+        toast.error("Oops an error occurred, try again", {
+              hideProgressBar: true,
+              position: toast.POSITION.BOTTOM_RIGHT,
+              icon: <BiSolidError/>,
+            });
     }
 };
 
@@ -45,7 +51,7 @@ const ModalContact = ({ closeModal }) => {
                   <form className='modal-form space-y-6 flex flex-col' ref={form} onSubmit={sendEmail}>
                       <input className='modal-input pl-4 text-medium bg-light h-[2.5em] text-1xl border-[0.094em] border-solid border-dark rounded-[0.313em] placeholder:text-1xl placeholder:text-orange placeholder:pl-2' type="text" name='name' placeholder='Your name' required />
                       <input className='modal-input pl-4 text-medium bg-light h-[2.5em] text-1xl border-[0.094em] border-solid border-dark rounded-[0.313em] placeholder:text-1xl placeholder:text-orange placeholder:pl-2' type="email" name="email" placeholder='Your email' required />
-                      <textarea className='modal-textarea pl-4 text-medium bg-light w-[31.25em] text-1xl border-[0.094em] border-solid border-dark rounded-[0.313em] placeholder:text-1xl placeholder:text-orange placeholder:p-2' name="message" rows="7" placeholder='Your message' required></textarea>
+                      <textarea className='modal-textarea pl-4 text-medium bg-light w-[31.25em] text-1xl border-[0.094em] border-solid border-dark rounded-[0.313em] placeholder:text-1xl placeholder:text-orange placeholder:p-2' name="message" rows="7" placeholder='Your message' maxlength="800" required></textarea>
                      <div className='modal-button-container text-center'>
                         <button className='modal-submit-button px-[1.375em] py-[0.625em] w-[12.5em] text-center inline-block bg-medium hover:bg-light border-[0.094em] border-solid border-medium hover:border-orange rounded-[0.188em] text-light hover:text-orange' type="submit">
                          Send your message
@@ -54,7 +60,9 @@ const ModalContact = ({ closeModal }) => {
                     </form>
                 </div>
             </div>
-              <ToastContainer />
+             <div className='modal-toast-container'>
+                <ToastContainer />
+             </div>
         </div>
     );
   };

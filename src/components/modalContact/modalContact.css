@@ -16,6 +16,10 @@
   resize: none;
 }
 
+.modal-toast-container {
+   z-index: 2; 
+}
+
 
 
 

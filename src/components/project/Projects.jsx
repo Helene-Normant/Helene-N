@@ -6,8 +6,8 @@ import Cards from '../cards/Cards';
 const Projects = () => {
   return (
 
-  <div className='project-container mt-[40px]'>
-      <div className='cards-container p-1 pl-2 scroll w-[619px] h-[611px] border-[1px] border-solid border-dark rounded-[3px] bg-light'>
+  <div className='project-container mt-[2.5em]'>
+      <div className='cards-container p-1 pl-2 scroll w-[38.688em] h-[38.188em] border-[0.063em] border-solid border-dark rounded-[0.188em] bg-light'>
            <Cards/>
       </div>
   </div>

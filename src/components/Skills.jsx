@@ -6,9 +6,9 @@ import { SiJavascript, SiTypescript } from 'react-icons/si';
 const Skills = () => {
     return (
     <div className='skills-container'>
-      <div className='tools-container mt-[20px]'>
+      <div className='tools-container mt-[1.25em]'>
           <div className="tools-title-container flex item-center">
-            <h1 className='tools-title text-[1rem] text-medium max-w-[150px] border-solid border-r-[0.3em] border-[#FD9C7D] tracking-[.2em] m-auto'>TOOLS</h1>
+            <h1 className='tools-title text-[1rem] text-medium max-w-[9.375em] border-solid border-r-[0.3em] border-[#FD9C7D] tracking-[0.2em] m-auto'>TOOLS</h1>
           </div>
           <div className='icons-tools-container mt-1 flex item-center justify-center'>
             <h3 className='icon-notion px-2 text-4xl text-medium'> <RxNotionLogo/> </h3> 
@@ -18,9 +18,9 @@ const Skills = () => {
          </div>
       </div>
         
-      <div className='stacks-container mt-10'>
+      <div className='stacks-container mt-9'>
         <div className="stacks-title-container flex item-center">
-          <h1 className='stacks-title text-[1rem] text-medium max-w-[150px] border-solid border-r-[0.3em] border-[#FD9C7D] tracking-[.2em] m-auto '>STACKS</h1>
+          <h1 className='stacks-title text-[1rem] text-medium max-w-[9.375em] border-solid border-r-[0.3em] border-[#FD9C7D] tracking-[0.2em] m-auto '>STACKS</h1>
         </div>
          <div className='icons-stacks-container mt-1 flex item-center justify-center'>
           <h3 className='icon-javascript px-2 text-3xl text-medium'> <SiJavascript/> </h3> 
@@ -32,9 +32,9 @@ const Skills = () => {
           </div>
         </div>
         
-        <div className='versioning-container mt-10'>
+        <div className='versioning-container mt-9'>
         <div className="versionning-container-title flex item-center px-5">
-          <h1 className='versioning-title text-[1rem] text-medium max-w-[150px] border-solid border-r-[0.3em] border-[#FD9C7D] tracking-[.2em] m-auto'>VERSIONING</h1>
+          <h1 className='versioning-title text-[1rem] text-medium max-w-[9.375em] border-solid border-r-[0.3em] border-[#FD9C7D] tracking-[0.2em] m-auto'>VERSIONING</h1>
         </div>
         <div className='icons-versioning-container mt-1 flex item-center justify-center'>
           <h3 className='icon-github px-2 text-4xl text-medium'> <FaGithub/> </h3> 

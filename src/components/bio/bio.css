@@ -11,17 +11,17 @@
     height: 100%;
     position: absolute;
     z-index: -1;
-    border: 1.5px solid #FD9C7D;
-    border-radius: 3px;
+    border: 0.094em solid #FD9C7D;
+    border-radius: 0.188em;
   }
 
   &::before {
     background-color: #FD9C7D;
-    top: -5px;
-    left: 60px;
+    top: -0.313em;
+    left: 3.75em;
   }
   &::after {
-    bottom: -15px;
-    right: -15px;
+    bottom: -0.938em;
+    right: -0.938em;
   }
   }

@@ -1,5 +1,5 @@
 import './bio.css';
-import IMGBIO from '../../assets/Bio-img.jpg';
+import IMGBIO from '../../assets/image-bio.png';
 
 const Bio = () => {
     return (

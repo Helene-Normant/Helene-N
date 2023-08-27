@@ -6,11 +6,11 @@ import Footer from './components/Footer';
 
 const App = () => {
   return (
-    <>
+    <div className='scroller'>
       <Header />
       <Content />
       <Footer />
-    </>
+    </div>
   )
     };
 

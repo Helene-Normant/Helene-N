@@ -7,7 +7,7 @@ import { BsArrowDown } from 'react-icons/bs';
 
 const About = () => {
     return (
-      <div className='about-container flex flex-col border-[0.094em] border-solid border-dark rounded-[0.188em] xxs:mt-[1.8em] xxs:h-[40em] xxs:w-[22em] xs:mt-[1.8em] xs:h-[38em] xs:w-[28em] sm:mt-[1.8em] sm:h-[35em] sm:w-[38em] md:mt-[1.8em] md:w-[38em] md:h-[35em] lg:mt-[2.7em] lg:w-[30em] lg:h-[36em] xl:mt-[3.2em] xl:w-[35em] xl:h-[36em] 2xl:mt-[2.5em] 2xl:w-[38.688em] 2xl:h-[38.188em] 3xl:w-[50em] 3xl:h-[50em] 3xl:mt-[2.3em]'>
+      <div className='about-container flex flex-col border-[0.094em] border-solid border-dark rounded-[0.188em] xxs:mt-[3.125em] xxs:h-[40em] xxs:w-[22em] xs:mt-[3.125em] xs:h-[38em] xs:w-[28em] sm:mt-[3.125em] sm:h-[35em] sm:w-[38em] md:mt-[3.125em] md:w-[38em] md:h-[35em] lg:mt-[3.125em] lg:w-[30em] lg:h-[36em] xl:mt-[3.125em] xl:w-[35em] xl:h-[36em] 2xl:mt-[2.6em] 2xl:w-[38.688em] 2xl:h-[38.188em] 3xl:w-[50em] 3xl:h-[50em] 3xl:mt-[2.6em]'>
           <div className='about-title container flex p-3'>
             <h2 className='title-about text-2xl text-dark'>ABOUT ME</h2>
             <h2 className='arrow-about text-3xl text-dark'> <BsArrowDown/> </h2>

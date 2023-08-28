@@ -1,5 +1,5 @@
 import IMG1 from '../../assets/triplink.png'
-import IMG2 from '../../assets/Castorlama.png'
+import IMG2 from '../../assets/castorlama.png'
 import IMG3 from '../../assets/portfolio-v1.png'
 
 

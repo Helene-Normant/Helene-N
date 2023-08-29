@@ -17,7 +17,7 @@ const Bio = () => {
         sm:w-[27em] md:ml-[6.5em] md:w-[27em] lg:ml-[5em] lg:w-[25em] lg:text-[0.9em] xl:ml-[5em] xl:w-[29.375em] xl:text-[0.87em]
         2xl:ml-[5em] 2xl:w-[29.375em] 2xl:text-[1em] 3xl:ml-[5em] 3xl:ml-[7em] 3xl:mt-[1em] 3xl:text-[1.1em]'>
                 Passionate about graphic design and computer science, I made the decision 2 years ago to change careers
-                and steer myself towards this field.
+                and Guide myself into this field.
                 After being supervised for 1 year at Qonto for my front-end developer apprenticeship,
                 I am now open to other opportunities to grow and improve my skills.
         </p>        

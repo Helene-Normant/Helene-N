@@ -13,6 +13,10 @@
   text-decoration: none;
 }  
 
+html {
+  overflow-y: scroll;
+}
+
 /* General style */
  body {
   background: #F9F8F6 ;

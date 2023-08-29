@@ -13,7 +13,7 @@
 .cards-img-container,
 .conteneur{
   position: relative; 
-  border-radius: 3px;
+  border-radius: 0.188em;
 }
 .conteneur:before{
   content: '';

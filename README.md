@@ -41,8 +41,7 @@
 
 <!-- USAGE EXAMPLES -->
 ## TESTS
-#### Jest (WIP)
+#### (WIP)
 
-[![My Skills](https://skillicons.dev/icons?i=jest)](https://skillicons.dev)
 
 

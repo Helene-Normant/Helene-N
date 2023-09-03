@@ -10,7 +10,7 @@ export const data = [
     title: 'Triplink | Front-end team | Graduate project',
     subtitle :'Traveler social network',
     description:'WIP: During our final year, I am participating in a group project with 4 members. Our team consists of two people working on the front and two on the back. I have a multifaceted role, serving as both a designer and a front-end developer. Additionally, I am demonstrating strong teamwork abilities and playing a crucial role in organizing the project.',
-    github: 'https://github.com/Helene-Normant/Triplink/front',
+    github: 'https://github.com/Helene-Normant/Triplink/',
     demo:''
   },
 
